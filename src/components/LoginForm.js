@@ -1,4 +1,4 @@
-import formStyles from "./LoginForm.module.scss";
+import formStyles from "./LoginForm.module.css";
 
 export default function LoginForm() {
     return (
@@ -7,7 +7,8 @@ export default function LoginForm() {
             <input className={formStyles.input} type="text" id="name" name="name"></input>
             <label className={formStyles.label} for="password">Password</label>
             <input className={formStyles.input} type="password" id="password" name="password"></input>
-            <input className={formStyles.submit} type="submit" value="Submit"></input>
+            {/* <input className={formStyles.submit} type="submit" value="Submit"></input> */}
+            <button className={formStyles.submit} type="submit" value="Submit">Submit</button>
         </form>
     )
 }
